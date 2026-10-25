@@ -4,12 +4,12 @@ const translations = {
     downloadCv:"Tải CV",heroEyebrow:"SINH VIÊN KỸ THUẬT PHẦN MỀM · JAVA BACKEND",
     heroLine1:"Xin chào, tôi là",
     heroLead:"Tôi biến yêu cầu thành <mark class='text-highlight'>luồng chức năng rõ ràng</mark>, viết phần lõi và đưa sản phẩm tới trạng thái có thể sử dụng.",
-    heroBody:"Sinh viên năm 3 tại Đại học FPT Cần Thơ, định hướng Java Backend. Hiện tôi dẫn dắt AURA Shore Store và phát triển các chức năng catalog bằng Java, Spring Boot.",
+    heroBody:"Sinh viên năm 3 tại Đại học FPT Cần Thơ, định hướng Java Backend. Hiện tôi dẫn dắt AURA Shoe Store và phát triển các chức năng catalog bằng Java, Spring Boot.",
     exploreProjects:"Xem dự án",getInTouch:"Liên hệ với tôi",heroFoot:"Đang tìm cơ hội phát triển trong mảng Java Backend",
     noteTop:"Từ ý tưởng",noteBottom:"đến chức năng chạy được.",
     statProjects:"dự án giữ vai trò trưởng nhóm",statModules:"nhóm chức năng catalog phụ trách",statAward:"giải Nhất Tin học trẻ cấp tỉnh",
     projectsTitle:"Dự án chọn lọc",projectsIntro:"Hai sản phẩm cho thấy cách tôi dẫn dắt nhóm, giải quyết bài toán kỹ thuật và hoàn thiện phần việc của mình.",
-    auraMedia:"Hình ảnh từ dự án AURA Shore Store",auraType:"WEB THƯƠNG MẠI ĐIỆN TỬ",present:"HIỆN TẠI",
+    auraMedia:"Hình ảnh từ dự án AURA Shoe Store",auraType:"WEB THƯƠNG MẠI ĐIỆN TỬ",present:"HIỆN TẠI",
     roleLabel:"Vai trò",auraRole:"Trưởng nhóm · Java Backend",
     auraSummary:"Hệ thống bán giày gồm trang khách hàng và khu vực quản trị. Tôi phụ trách <strong class='text-emphasis'>ba nhóm chức năng catalog</strong>: sản phẩm, danh mục và thương hiệu.",
     auraPoint1:"Phân công và theo dõi công việc nhóm; rà soát thay đổi trước khi tích hợp.",
@@ -38,12 +38,12 @@ const translations = {
     downloadCv:"Download CV",heroEyebrow:"SOFTWARE ENGINEERING STUDENT · JAVA BACKEND",
     heroLine1:"Hello, I'm",
     heroLead:"I turn requirements into <mark class='text-highlight'>clear functionality</mark>, build the core logic, and help teams deliver software people can use.",
-    heroBody:"A third-year Software Engineering student at FPT University, Can Tho Campus, focused on Java Backend. I currently lead AURA Shore Store and develop its catalog features with Java and Spring Boot.",
+    heroBody:"A third-year Software Engineering student at FPT University, Can Tho Campus, focused on Java Backend. I currently lead AURA Shoe Store and develop its catalog features with Java and Spring Boot.",
     exploreProjects:"Explore projects",getInTouch:"Get in touch",heroFoot:"Seeking opportunities to grow in Java Backend",
     noteTop:"From an idea",noteBottom:"to working functionality.",
     statProjects:"projects led",statModules:"catalog feature groups owned",statAward:"provincial first prize in youth informatics",
     projectsTitle:"Selected work",projectsIntro:"Two projects that show how I coordinate a team, solve technical problems, and deliver my own contributions.",
-    auraMedia:"Project image from AURA Shore Store",auraType:"E-COMMERCE WEB APPLICATION",present:"PRESENT",
+    auraMedia:"Project image from AURA Shoe Store",auraType:"E-COMMERCE WEB APPLICATION",present:"PRESENT",
     roleLabel:"Role",auraRole:"Team Lead · Java Backend",
     auraSummary:"A shoe store system with a customer storefront and management area. I own <strong class='text-emphasis'>three catalog feature groups</strong>: products, categories, and brands.",
     auraPoint1:"Assigned and tracked team tasks; reviewed changes before integration.",
@@ -92,8 +92,8 @@ function setLanguage(next) {
   document.querySelector(".skip-link").textContent = language === "vi" ? "Chuyển đến nội dung" : "Skip to content";
   document.querySelector(".footer-inner > div:first-child span").textContent = translations[language].footerLocation;
   document.querySelector('meta[name="description"]').content = language === "vi"
-    ? "Portfolio Nguyễn Minh Thức — sinh viên Kỹ thuật phần mềm, định hướng Java Backend. Dự án AURA Shore Store và Tetris 2048 Fusion."
-    : "Nguyen Minh Thuc's Java Backend portfolio. Explore AURA Shore Store, Tetris 2048 Fusion, skills, and achievements.";
+    ? "Portfolio Nguyễn Minh Thức — sinh viên Kỹ thuật phần mềm, định hướng Java Backend. Dự án AURA Shoe Store và Tetris 2048 Fusion."
+    : "Nguyen Minh Thuc's Java Backend portfolio. Explore AURA Shoe Store, Tetris 2048 Fusion, skills, and achievements.";
   cvLinks.forEach((link) => { link.href = "assets/cv/CV_Nguyen_Minh_Thuc_" + language.toUpperCase() + ".pdf"; });
   try { localStorage.setItem("portfolio-language", language); } catch (_) {}
 }
