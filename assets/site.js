@@ -3,7 +3,7 @@ const translations = {
     navProjects:"Dự án",navAbout:"Về tôi",navJourney:"Hành trình",navContact:"Liên hệ",
     downloadCv:"Tải CV",heroEyebrow:"SINH VIÊN KỸ THUẬT PHẦN MỀM · JAVA BACKEND",
     heroLine1:"Xin chào, tôi là",
-    heroLead:"Tôi biến yêu cầu thành luồng chức năng rõ ràng, viết phần lõi và đưa sản phẩm tới trạng thái có thể sử dụng.",
+    heroLead:"Tôi biến yêu cầu thành <mark class='text-highlight'>luồng chức năng rõ ràng</mark>, viết phần lõi và đưa sản phẩm tới trạng thái có thể sử dụng.",
     heroBody:"Sinh viên năm 3 tại Đại học FPT Cần Thơ, định hướng Java Backend. Hiện tôi dẫn dắt AURA Shore Store và phát triển các chức năng catalog bằng Java, Spring Boot.",
     exploreProjects:"Xem dự án",getInTouch:"Liên hệ với tôi",heroFoot:"Đang tìm cơ hội phát triển trong mảng Java Backend",
     noteTop:"Từ ý tưởng",noteBottom:"đến chức năng chạy được.",
@@ -11,7 +11,7 @@ const translations = {
     projectsTitle:"Dự án chọn lọc",projectsIntro:"Hai sản phẩm cho thấy cách tôi dẫn dắt nhóm, giải quyết bài toán kỹ thuật và hoàn thiện phần việc của mình.",
     auraMedia:"Hình ảnh từ dự án AURA Shore Store",auraType:"WEB THƯƠNG MẠI ĐIỆN TỬ",present:"HIỆN TẠI",
     roleLabel:"Vai trò",auraRole:"Trưởng nhóm · Java Backend",
-    auraSummary:"Hệ thống bán giày gồm trang khách hàng và khu vực quản trị. Tôi phụ trách ba nhóm chức năng catalog: sản phẩm, danh mục và thương hiệu.",
+    auraSummary:"Hệ thống bán giày gồm trang khách hàng và khu vực quản trị. Tôi phụ trách <strong class='text-emphasis'>ba nhóm chức năng catalog</strong>: sản phẩm, danh mục và thương hiệu.",
     auraPoint1:"Phân công và theo dõi công việc nhóm; rà soát thay đổi trước khi tích hợp.",
     auraPoint2:"Phát triển luồng quản lý sản phẩm, biến thể, danh mục và thương hiệu với Java và Spring Boot.",
     auraPoint3:"Tách hành vi tìm kiếm danh mục theo đối tượng: khách không thấy danh mục ngừng hoạt động, quản trị viên vẫn tìm được để quản lý.",
@@ -20,7 +20,7 @@ const translations = {
     gamePoint1:"Thiết kế cấu trúc và phát triển cơ chế khối rơi, xoay, di chuyển và hợp nhất theo chiều dọc.",
     gamePoint2:"Phối hợp tích hợp năm chế độ chơi, giao diện và lưu hồ sơ người chơi/điểm cao bằng JSON.",
     viewSource2:"Xem mã nguồn",
-    aboutTitle:"Tôi làm việc như thế nào",aboutIntro:"Tôi thích hiểu rõ mục tiêu, dữ liệu và quy tắc nghiệp vụ trước khi bắt tay vào làm. Khi dẫn nhóm, tôi chia yêu cầu thành đầu việc cụ thể, xác định người phụ trách và kết quả cần đạt để mỗi thành viên biết mình cần làm gì và phần việc đó đóng góp ra sao vào sản phẩm chung.",
+    aboutTitle:"Tôi làm việc như thế nào",aboutIntro:"Tôi thích hiểu rõ mục tiêu, dữ liệu và quy tắc nghiệp vụ trước khi bắt tay vào làm. Khi dẫn nhóm, tôi chia yêu cầu thành <mark class='text-highlight'>đầu việc cụ thể</mark>, xác định người phụ trách và kết quả cần đạt để mỗi thành viên biết mình cần làm gì và phần việc đó đóng góp ra sao vào sản phẩm chung.",
     githubProfile:"Khám phá GitHub của tôi",
     principle1Title:"Làm rõ bài toán",principle1Body:"Chia chức năng thành luồng dữ liệu và quy tắc có thể kiểm tra.",
     principle2Title:"Xây phần lõi",principle2Body:"Ưu tiên logic có cấu trúc, giao diện rõ với các thành phần liên quan.",
@@ -37,7 +37,7 @@ const translations = {
     navProjects:"Projects",navAbout:"About",navJourney:"Background",navContact:"Contact",
     downloadCv:"Download CV",heroEyebrow:"SOFTWARE ENGINEERING STUDENT · JAVA BACKEND",
     heroLine1:"Hello, I'm",
-    heroLead:"I turn requirements into clear functionality, build the core logic, and help teams deliver software people can use.",
+    heroLead:"I turn requirements into <mark class='text-highlight'>clear functionality</mark>, build the core logic, and help teams deliver software people can use.",
     heroBody:"A third-year Software Engineering student at FPT University, Can Tho Campus, focused on Java Backend. I currently lead AURA Shore Store and develop its catalog features with Java and Spring Boot.",
     exploreProjects:"Explore projects",getInTouch:"Get in touch",heroFoot:"Seeking opportunities to grow in Java Backend",
     noteTop:"From an idea",noteBottom:"to working functionality.",
@@ -45,7 +45,7 @@ const translations = {
     projectsTitle:"Selected work",projectsIntro:"Two projects that show how I coordinate a team, solve technical problems, and deliver my own contributions.",
     auraMedia:"Project image from AURA Shore Store",auraType:"E-COMMERCE WEB APPLICATION",present:"PRESENT",
     roleLabel:"Role",auraRole:"Team Lead · Java Backend",
-    auraSummary:"A shoe store system with a customer storefront and management area. I own three catalog feature groups: products, categories, and brands.",
+    auraSummary:"A shoe store system with a customer storefront and management area. I own <strong class='text-emphasis'>three catalog feature groups</strong>: products, categories, and brands.",
     auraPoint1:"Assigned and tracked team tasks; reviewed changes before integration.",
     auraPoint2:"Built product, variant, category, and brand management flows with Java and Spring Boot.",
     auraPoint3:"Separated category search by audience: inactive categories stay hidden from customers but remain searchable by administrators.",
@@ -54,7 +54,7 @@ const translations = {
     gamePoint1:"Designed the structure and developed falling, rotation, movement, and vertical merging mechanics.",
     gamePoint2:"Coordinated integration of five game modes, the interface, and JSON-based player profiles and high scores.",
     viewSource2:"View source code",
-    aboutTitle:"How I work",aboutIntro:"I like to understand the goal, data, and business rules before I start building. When leading a team, I turn requirements into clear tasks, define ownership and expected outcomes, and help each member see how their work contributes to the product.",
+    aboutTitle:"How I work",aboutIntro:"I like to understand the goal, data, and business rules before I start building. When leading a team, I turn requirements into <mark class='text-highlight'>clear tasks</mark>, define ownership and expected outcomes, and help each member see how their work contributes to the product.",
     githubProfile:"Explore my GitHub",
     principle1Title:"Clarify the problem",principle1Body:"Break a feature down into data flows and rules that can be verified.",
     principle2Title:"Build the core",principle2Body:"Prioritize structured logic and clear interfaces with related components.",
@@ -73,6 +73,7 @@ const languageButton = document.querySelector(".language-toggle");
 const menuButton = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".site-nav");
 const cvLinks = document.querySelectorAll("[data-cv-link]");
+const richTextKeys = new Set(["heroLead", "auraSummary", "aboutIntro", "contactTitle"]);
 let language = "vi";
 
 function setLanguage(next) {
@@ -81,7 +82,7 @@ function setLanguage(next) {
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.dataset.i18n;
     if (!(key in translations[language])) return;
-    if (key === "contactTitle") node.innerHTML = translations[language][key];
+    if (richTextKeys.has(key)) node.innerHTML = translations[language][key];
     else node.textContent = translations[language][key];
   });
   document.querySelector(".lang-vi").classList.toggle("active", language === "vi");
