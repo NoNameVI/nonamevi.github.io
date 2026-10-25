@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Tetris 2048 Fusion</title>
+  <desc id="desc">The T tetromino defined in PolyominoFactory drops onto a board. Its four tiles carry values 2, 4, 8, and 2, all possible starting values in the game.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <pattern id="grid" width="31" height="31" patternUnits="userSpaceOnUse">
+      <path d="M 31 0 L 0 0 0 31" fill="none" stroke="#35415B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <circle cx="1025" cy="66" r="166" fill="#7C3AED" opacity=".13"/>
+  <circle cx="57" cy="320" r="142" fill="#14B8A6" opacity=".10"/>
+  <rect x="47" y="48" width="6" height="263" rx="3" fill="#5EEAD4"/>
+  <text x="83" y="113" fill="#94A3B8" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="4">JAVA · JAVAFX · FIVE GAME MODES</text>
+  <text x="82" y="179" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="54" font-weight="800">TETRIS <tspan fill="#5EEAD4">2048</tspan></text>
+  <text x="82" y="236" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="54" font-weight="800">FUSION</text>
+  <text x="84" y="284" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="19">Drop the blocks. Merge the numbers. Master the board.</text>
+  <rect x="802" y="39" width="316" height="292" rx="17" fill="#0B1220" stroke="#475569" stroke-width="2"/>
+  <rect x="821" y="58" width="278" height="254" fill="url(#grid)"/>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle" dominant-baseline="middle">
+    <rect x="945" y="87" width="61" height="61" rx="8" fill="url(#tile)"/><text x="975.5" y="118" fill="#0F172A">2</text>
+    <rect x="883" y="149" width="61" height="61" rx="8" fill="#FBBF24"/><text x="913.5" y="180" fill="#422006">4</text>
+    <rect x="945" y="149" width="61" height="61" rx="8" fill="#FB923C"/><text x="975.5" y="180" fill="#431407">8</text>
+    <rect x="1007" y="149" width="61" height="61" rx="8" fill="url(#tile)"/><text x="1037.5" y="180" fill="#0F172A">2</text>
+    <rect x="945" y="242" width="61" height="61" rx="8" fill="#FB923C"/><text x="975.5" y="273" fill="#431407">8</text>
+    <rect x="883" y="242" width="61" height="61" rx="8" fill="#A78BFA"/><text x="913.5" y="273" fill="#2E1065">16</text>
+    <rect x="1007" y="242" width="61" height="61" rx="8" fill="#5EEAD4"/><text x="1037.5" y="273" fill="#134E4A">32</text>
+  </g>
+  <path d="M 975 214 L 975 236" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 967 228 L 975 238 L 983 228" fill="none" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
