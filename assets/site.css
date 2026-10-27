@@ -247,18 +247,6 @@ h1 .accent-period { -webkit-text-fill-color: var(--lime); }
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  filter: grayscale(.7) contrast(1.08) brightness(.86);
-}
-.portrait-grid {
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  pointer-events: none;
-  opacity: .22;
-  background-image:
-    linear-gradient(rgba(20, 50, 67, .6) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 50, 67, .6) 1px, transparent 1px);
-  background-size: 44px 44px;
 }
 .portrait-caption {
   position: absolute;
