@@ -13,7 +13,7 @@ const translations = {
     previous: "Trước", next: "Tiếp", show: "Trình chiếu", replay: "Phát lại", exitShow: "Thoát trình chiếu ×",
     thumbIntro: "Giới thiệu", thumbMethod: "Cách tôi làm việc", thumbSkills: "Kỹ năng & cột mốc", thumbContact: "Liên hệ", thumbContactPreview: "KẾT NỐI.", shapes: "Hình", arrange: "Sắp xếp",
     introKicker: "01 / GIỚI THIỆU", introLine1: "TÔI XÂY", introLine2: "PHẦN LÕI", introLine3: "CHO SẢN PHẨM CÓ THỂ DÙNG.",
-    introDescription: "Từ yêu cầu đến luồng chức năng rõ ràng, rồi đưa sản phẩm tới trạng thái sử dụng được.",
+    introDescription: "Từ yêu cầu đến luồng chức năng rõ ràng, rồi đưa sản phẩm tới trạng thái sử dụng được.", portraitAlt: "Chân dung Nguyễn Minh Thức", rowCleared: "HÀNG ĐÃ XÓA",
     auraKicker: "02 / DỰ ÁN WEB", auraLead: "Hệ thống bán giày cho khách hàng và quản trị viên.",
     roleLabel: "VAI TRÒ", auraRole: "Trưởng nhóm · Java Backend", coreLabel: "PHẦN LÕI", auraCore: "Sản phẩm, danh mục, thương hiệu",
     highlightLabel: "ĐIỂM NHẤN", auraHighlight: "Tách tìm kiếm danh mục theo khách hàng và quản trị viên", openGitLab: "MỞ DỰ ÁN TRÊN GITLAB",
@@ -44,7 +44,7 @@ const translations = {
     previous: "Previous", next: "Next", show: "Slide Show", replay: "Replay", exitShow: "Exit slide show ×",
     thumbIntro: "Introduction", thumbMethod: "How I work", thumbSkills: "Skills & milestones", thumbContact: "Contact", thumbContactPreview: "LET'S TALK.", shapes: "Shapes", arrange: "Arrange",
     introKicker: "01 / INTRODUCTION", introLine1: "I BUILD", introLine2: "THE CORE", introLine3: "FOR SOFTWARE PEOPLE CAN USE.",
-    introDescription: "I turn requirements into clear flows and help bring software to a usable state.",
+    introDescription: "I turn requirements into clear flows and help bring software to a usable state.", portraitAlt: "Portrait of Nguyen Minh Thuc", rowCleared: "ROW CLEARED",
     auraKicker: "02 / WEB PROJECT", auraLead: "A shoe store with a customer storefront and admin area.",
     roleLabel: "ROLE", auraRole: "Team Lead · Java Backend", coreLabel: "CORE WORK", auraCore: "Products, categories, and brands",
     highlightLabel: "HIGHLIGHT", auraHighlight: "Different category search behavior for customers and admins", openGitLab: "OPEN PROJECT ON GITLAB",
@@ -154,6 +154,7 @@ function setLanguage(next) {
   document.querySelectorAll(".lang-vi,.lang-en").forEach((node) => node.classList.toggle("active", node.classList.contains("lang-" + language)));
   document.getElementById("language-toggle").setAttribute("aria-label", language === "vi" ? "Switch to English" : "Chuyển sang tiếng Việt");
   document.querySelector(".slide-label").textContent = words.labels[currentSlide];
+  document.querySelector(".portrait-art img").alt = words.portraitAlt;
   document.getElementById("slide-count").textContent = words.slideCount(currentSlide + 1);
   document.querySelector('meta[name="description"]').content = language === "vi"
     ? "Portfolio Nguyễn Minh Thức — Java Backend, AURA Shoe Store và Tetris 2048 Fusion."
