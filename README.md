@@ -85,10 +85,6 @@ I turn requirements into clear flows and help bring software to a usable state. 
 
 Trang [portfolio](https://nonamevi.github.io/) là bản trình chiếu PowerPoint với sáu slide, điều hướng bằng thumbnail hoặc cuộn chuột, hỗ trợ VI/EN. [Bản Word tương tác](https://nonamevi.github.io/word-demo.html) đọc nội dung từ `word-demo.vi.md` và `word-demo.en.md`.
 
-Để xem cục bộ, chạy `python -m http.server 8000` trong thư mục repository rồi mở `http://localhost:8000`. Sau khi sửa Markdown của bản Word hoặc `assets/word-icons.svg`, chạy `node scripts/build-word-demo-bundle.mjs` để cập nhật gói dự phòng cho chế độ mở trực tiếp bằng `file://`.
-
-GitHub Pages xuất bản từ nhánh `main`, thư mục gốc. GitHub chỉ hiển thị giao diện của README; các biểu tượng thanh công cụ ở đầu tài liệu không phải nút chỉnh sửa thật.
-
 </details>
 
 <p align="right"><sub>Trang 1 / 1 &nbsp;·&nbsp; Tiếng Việt / English &nbsp;·&nbsp; 100%</sub></p>
