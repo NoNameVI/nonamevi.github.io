@@ -52,9 +52,8 @@ Assign, track, and review changes before merging.
 
 ## Skills & milestones
 
-- **Languages:** Java · C
-- **Frameworks & UI:** Spring Boot · JavaFX
-- **Data:** MySQL · MS SQL Server
+- **Languages and frameworks:** Java · Spring Boot · JavaFX
+- **Data:** MySQL
 - **Tools:** Git · GitHub · GitLab · Maven
 - **English:** Read most technical documentation
 
@@ -67,11 +66,5 @@ Software Engineering · FPT University, Can Tho Campus · GPA 3.28/4 · 2024 –
 ## Contact
 
 I am looking for a Java Backend opportunity to keep building products and learning from an experienced team.
-
-**Email:** thucnmce200458@gmail.com
-
-[Send an email](mailto:thucnmce200458@gmail.com)
-
-[View CV (PDF)](assets/cv/CV_Nguyen_Minh_Thuc_EN.pdf)
 
 [Personal GitHub](https://github.com/NoNameVI)

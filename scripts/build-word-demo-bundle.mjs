@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 const root = fileURLToPath(new URL("../", import.meta.url));
 const outputPath = fileURLToPath(new URL("../assets/word-demo-bundle.js", import.meta.url));
 const [vi, en, icons] = await Promise.all([
-  readFile(new URL("../portfolio.vi.md", import.meta.url), "utf8"),
-  readFile(new URL("../portfolio.en.md", import.meta.url), "utf8"),
+  readFile(new URL("../word-demo.vi.md", import.meta.url), "utf8"),
+  readFile(new URL("../word-demo.en.md", import.meta.url), "utf8"),
   readFile(new URL("../assets/word-icons.svg", import.meta.url), "utf8")
 ]);
 

@@ -10,10 +10,10 @@ const pagesHost = document.getElementById("pages");
 const scroller = document.getElementById("document-scroll");
 const ui = {
   vi: {
-    saved: "Chế độ xem · Nội dung từ Markdown", back: "← Trình chiếu", share: "Chia sẻ ↗", file: "Tệp", home: "Trang đầu", insert: "Chèn", design: "Thiết kế", layout: "Bố trí", references: "Tham chiếu", mailings: "Thư", review: "Xem lại", view: "Xem", help: "Trợ giúp", comments: "▢ Bình luận", editing: "✎ Chỉnh sửa", demo: "PORTFOLIO", download: "Tải file .md", print: "In tài liệu", fileGroup: "Tệp", fileHint: "Nội dung portfolio được lưu trong file Markdown. Trang này dành để đọc, in và mở liên kết dự án.", copy: "Sao chép liên kết", clipboard: "Bảng nhớ tạm", paste: "Dán", font: "Phông chữ", fontSize: "Cỡ chữ", paragraph: "Đoạn văn", normal: "Thường", noSpacing: "Không giãn", heading: "Tiêu đề", styles: "Kiểu", find: "Tìm", replace: "Thay", select: "Chọn", editingGroup: "Chỉnh sửa", dictate: "Đọc", voice: "Giọng nói", editor: "Biên tập", editorGroup: "Biên tập", addins: "Tiện ích", profile: "Hồ sơ", skills: "Kỹ năng", navigate: "Điều hướng", insertHint: "Chọn một mục để chuyển đến trang chứa nội dung tương ứng.", designHint: "Portfolio giữ một kiểu tài liệu nhất quán; nội dung nằm trong file Markdown.", a4: "Khổ A4", margins: "Lề rộng", pageSetup: "Thiết lập trang", layoutHint: "Hai trang giấy A4 với lề và khoảng cách chữ theo phong cách tài liệu Word.", referencesHint: "Liên kết dự án và hồ sơ được đặt ngay trong tài liệu Markdown.", mailingsHint: "Thông tin liên hệ nằm ở cuối tài liệu.", reviewHint: "Đây là portfolio ở chế độ đọc. Nội dung được cập nhật từ file .md.", helpHint: "Chọn trang ở bên trái, đổi ngôn ngữ ở góc dưới và mở các liên kết dự án ngay trong tài liệu.", proofingTitle: "BẬT KIỂM TRA CHÍNH TẢ", proofingBody: "Tính năng kiểm tra chính tả chưa bật trong chế độ xem.", proofingDismiss: "Ẩn thông báo", readMode: "Chế độ đọc", viewGroup: "Chế độ xem", zoom100: "100%", zoom: "Thu phóng", pages: "TRANG", overview: "Tổng quan", experience: "Kỹ năng & liên hệ", source: "Nguồn nội dung", loading: "Đang mở tài liệu Markdown…", copied: "Đã sao chép liên kết", copyFailed: "Không sao chép được. Liên kết:", loadFailed: "Không mở được file Markdown.", pageStatus: (n) => `Trang ${n} / 2`, wordCount: (n) => `${n} từ`, document: "TÀI LIỆU PORTFOLIO", page: "Trang"
+    saved: "Bản xem trước · Nội dung từ Markdown", back: "← Portfolio", share: "Chia sẻ ↗", file: "Tệp", home: "Trang đầu", insert: "Chèn", design: "Thiết kế", layout: "Bố trí", references: "Tham chiếu", mailings: "Thư", review: "Xem lại", view: "Xem", help: "Trợ giúp", comments: "▢ Bình luận", editing: "✎ Chỉnh sửa", demo: "BẢN DEMO", download: "Tải file .md", print: "In tài liệu", fileGroup: "Tệp", fileHint: "Nội dung được đọc trực tiếp từ file Markdown. Đây là bản xem trước, không phải trình soạn thảo.", copy: "Sao chép liên kết", clipboard: "Bảng nhớ tạm", paste: "Dán", font: "Phông chữ", fontSize: "Cỡ chữ", paragraph: "Đoạn văn", normal: "Thường", noSpacing: "Không giãn", heading: "Tiêu đề", styles: "Kiểu", find: "Tìm", replace: "Thay", select: "Chọn", editingGroup: "Chỉnh sửa", dictate: "Đọc", voice: "Giọng nói", editor: "Biên tập", editorGroup: "Biên tập", addins: "Tiện ích", profile: "Hồ sơ", skills: "Kỹ năng", navigate: "Điều hướng", insertHint: "Chọn một mục để chuyển đến trang chứa nội dung tương ứng.", designHint: "Bản demo giữ một kiểu tài liệu nhất quán; định dạng nội dung nằm trong file Markdown.", a4: "Khổ A4", margins: "Lề rộng", pageSetup: "Thiết lập trang", layoutHint: "Hai trang giấy A4 với lề và khoảng cách chữ theo phong cách tài liệu Word.", referencesHint: "Liên kết dự án và hồ sơ được đặt ngay trong tài liệu Markdown.", mailingsHint: "Trang portfolio này là bản xem trước, không gửi thư từ thanh công cụ.", reviewHint: "Đây là bản trình bày chỉ đọc. Hãy chỉnh nội dung trong file .md để cập nhật tài liệu.", helpHint: "Bạn có thể mở, tải hoặc chỉnh file .md; trang HTML chỉ đảm nhiệm giao diện Word.", proofingTitle: "BẬT KIỂM TRA CHÍNH TẢ", proofingBody: "Bản demo không kiểm tra chính tả của tài liệu này.", proofingDismiss: "Ẩn thông báo", readMode: "Chế độ đọc", viewGroup: "Chế độ xem", zoom100: "100%", zoom: "Thu phóng", pages: "TRANG", overview: "Tổng quan", experience: "Kỹ năng & liên hệ", source: "Nguồn nội dung", loading: "Đang mở tài liệu Markdown…", copied: "Đã sao chép liên kết", copyFailed: "Không sao chép được. Liên kết:", loadFailed: "Không mở được file Markdown.", pageStatus: (n) => `Trang ${n} / 2`, wordCount: (n) => `${n} từ`, document: "TÀI LIỆU PORTFOLIO", page: "Trang"
   },
   en: {
-    saved: "Reading mode · Content from Markdown", back: "← Slide show", share: "Share ↗", file: "File", home: "Home", insert: "Insert", design: "Design", layout: "Layout", references: "References", mailings: "Mailings", review: "Review", view: "View", help: "Help", comments: "▢ Comments", editing: "✎ Editing", demo: "PORTFOLIO", download: "Download .md", print: "Print document", fileGroup: "File", fileHint: "Portfolio content is stored in Markdown. Read, print, or open project links here.", copy: "Copy link", clipboard: "Clipboard", paste: "Paste", font: "Font", fontSize: "Font size", paragraph: "Paragraph", normal: "Normal", noSpacing: "No Spacing", heading: "Heading", styles: "Styles", find: "Find", replace: "Replace", select: "Select", editingGroup: "Editing", dictate: "Dictate", voice: "Voice", editor: "Editor", editorGroup: "Editor", addins: "Add-ins", profile: "Profile", skills: "Skills", navigate: "Navigate", insertHint: "Choose a section to jump to its page.", designHint: "The portfolio uses a consistent document theme with content from Markdown.", a4: "A4 size", margins: "Wide margins", pageSetup: "Page setup", layoutHint: "Two A4 pages with Word-inspired margins and typography.", referencesHint: "Project and profile links are part of the Markdown document.", mailingsHint: "Contact information is at the end of the document.", reviewHint: "This is a read-only portfolio. Its content is updated from the .md file.", helpHint: "Select a page on the left, switch language below, or open project links in the document.", proofingTitle: "TURN ON PROOFING", proofingBody: "Proofing is unavailable in reading mode.", proofingDismiss: "Don't show again", readMode: "Reading mode", viewGroup: "Views", zoom100: "100%", zoom: "Zoom", pages: "PAGES", overview: "Overview", experience: "Skills & contact", source: "Content source", loading: "Opening Markdown document…", copied: "Link copied", copyFailed: "Could not copy. Link:", loadFailed: "Could not load the Markdown file.", pageStatus: (n) => `Page ${n} / 2`, wordCount: (n) => `${n} words`, document: "PORTFOLIO DOCUMENT", page: "Page"
+    saved: "Preview · Content from Markdown", back: "← Portfolio", share: "Share ↗", file: "File", home: "Home", insert: "Insert", design: "Design", layout: "Layout", references: "References", mailings: "Mailings", review: "Review", view: "View", help: "Help", comments: "▢ Comments", editing: "✎ Editing", demo: "DEMO", download: "Download .md", print: "Print document", fileGroup: "File", fileHint: "Content is loaded directly from a Markdown file. This is a preview, not an editor.", copy: "Copy link", clipboard: "Clipboard", paste: "Paste", font: "Font", fontSize: "Font size", paragraph: "Paragraph", normal: "Normal", noSpacing: "No Spacing", heading: "Heading", styles: "Styles", find: "Find", replace: "Replace", select: "Select", editingGroup: "Editing", dictate: "Dictate", voice: "Voice", editor: "Editor", editorGroup: "Editor", addins: "Add-ins", profile: "Profile", skills: "Skills", navigate: "Navigate", insertHint: "Choose a section to jump to its page.", designHint: "This preview uses one consistent document theme; the Markdown file provides the content.", a4: "A4 size", margins: "Wide margins", pageSetup: "Page setup", layoutHint: "Two A4 pages with Word-inspired margins and typography.", referencesHint: "Project and profile links are part of the Markdown document.", mailingsHint: "This portfolio is a preview; the ribbon does not send mail.", reviewHint: "This is a read-only presentation. Edit the .md file to update the document.", helpHint: "You can open, download, or edit the .md file; HTML provides the Word-like interface.", proofingTitle: "TURN ON PROOFING", proofingBody: "Spelling and grammar are not checked in this demo.", proofingDismiss: "Don't show again", readMode: "Reading mode", viewGroup: "Views", zoom100: "100%", zoom: "Zoom", pages: "PAGES", overview: "Overview", experience: "Skills & contact", source: "Content source", loading: "Opening Markdown document…", copied: "Link copied", copyFailed: "Could not copy. Link:", loadFailed: "Could not load the Markdown file.", pageStatus: (n) => `Page ${n} / 2`, wordCount: (n) => `${n} words`, document: "PORTFOLIO DOCUMENT", page: "Page"
   }
 };
 
@@ -25,7 +25,7 @@ const escapeHtml = (value) => value.replace(/[&<>"']/g, (char) => ({ "&": "&amp;
 
 function inlineMarkdown(value) {
   return escapeHtml(value)
-    .replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+|mailto:[^)\s]+|assets\/cv\/[^)\s]+)\)/g, (_, label, url) => `<a href="${url}"${url.startsWith("mailto:") ? "" : ' target="_blank" rel="noopener noreferrer"'}>${label} ↗</a>`)
+    .replace(/\[([^\]]+)\]\((https:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1 ↗</a>')
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 }
 
@@ -44,7 +44,7 @@ function markdownToHtml(markdown) {
     if (line.startsWith("> ")) { closeList(); output.push(`<blockquote>${inlineMarkdown(line.slice(2))}</blockquote>`); continue; }
     if (line.startsWith("- ")) { if (!listOpen) { output.push("<ul>"); listOpen = true; } output.push(`<li>${inlineMarkdown(line.slice(2))}</li>`); continue; }
     closeList();
-    output.push(`<p${/^\[[^\]]+\]\([^)]+\)$/.test(line) ? ' class="document-link"' : ""}>${inlineMarkdown(line)}</p>`);
+    output.push(`<p>${inlineMarkdown(line)}</p>`);
   }
   closeList();
   return output.join("\n");
@@ -53,16 +53,6 @@ function markdownToHtml(markdown) {
 function updateStatus() {
   document.getElementById("page-status").textContent = ui[language].pageStatus(currentPage);
   document.querySelectorAll(".page-thumbnail").forEach((thumb) => thumb.classList.toggle("is-active", Number(thumb.dataset.page) === currentPage));
-}
-
-function scrollToDocumentPage(target, smooth = false) {
-  const top = target.getBoundingClientRect().top - scroller.getBoundingClientRect().top + scroller.scrollTop;
-  if (smooth) scroller.scrollTo({ top, behavior: "smooth" });
-  else {
-    scroller.style.scrollBehavior = "auto";
-    scroller.scrollTop = top;
-    requestAnimationFrame(() => scroller.style.removeProperty("scroll-behavior"));
-  }
 }
 
 function renderPages(markdown) {
@@ -77,14 +67,9 @@ function renderPages(markdown) {
     const alignment = document.querySelector('[data-action^="align-"][aria-pressed="true"]')?.dataset.action.slice(6);
     if (alignment && alignment !== "left") content.classList.add(`align-${alignment}`);
   });
-  const requestedPage = Number(location.hash.match(/^#page-(\d+)$/)?.[1] || 1);
-  currentPage = requestedPage >= 1 && requestedPage <= parts.length ? requestedPage : 1;
+  currentPage = 1;
   updateStatus();
   scroller.scrollTop = 0;
-  if (currentPage > 1) requestAnimationFrame(() => {
-    const target = document.getElementById(`page-${currentPage}`);
-    if (target) scrollToDocumentPage(target);
-  });
 }
 
 async function setLanguage(next) {
@@ -95,12 +80,12 @@ async function setLanguage(next) {
     if (typeof label === "string") element.textContent = label;
   }
   document.querySelectorAll(".lang-vi,.lang-en").forEach((element) => element.classList.toggle("active", element.classList.contains(`lang-${language}`)));
-  const file = `portfolio.${language}.md`;
+  const file = `word-demo.${language}.md`;
   document.getElementById("document-name").textContent = `Portfolio_NguyenMinhThuc.${language}.md`;
   document.getElementById("source-filename").textContent = file;
   document.getElementById("download-md").href = file;
   document.getElementById("language-button").setAttribute("aria-label", language === "vi" ? "Switch to English" : "Chuyển sang tiếng Việt");
-  document.title = `${language === "vi" ? "Nguyễn Minh Thức" : "Nguyen Minh Thuc"} | Java Backend Portfolio`;
+  document.title = `${language === "vi" ? "Nguyễn Minh Thức" : "Nguyen Minh Thuc"} — Word portfolio demo`;
   const url = new URL(location.href);
   if (language === "en") url.searchParams.set("lang", "en");
   else url.searchParams.delete("lang");
@@ -130,7 +115,7 @@ function showToast(message) {
 }
 
 async function copyLink() {
-  const url = location.href;
+  const url = location.href.split("#")[0];
   try { await navigator.clipboard.writeText(url); showToast(ui[language].copied); }
   catch (_) { showToast(`${ui[language].copyFailed} ${url}`); }
 }
@@ -163,7 +148,7 @@ document.addEventListener("click", (event) => {
   else if (action === "print") window.print();
   else if (action === "jump") {
     const target = document.getElementById(`page-${button.dataset.page}`);
-    if (target) { scrollToDocumentPage(target, true); currentPage = Number(button.dataset.page); history.replaceState(null, "", `#page-${currentPage}`); updateStatus(); }
+    if (target) { target.scrollIntoView({ behavior: "smooth", block: "start" }); currentPage = Number(button.dataset.page); updateStatus(); }
   }
   else if (action === "bold" || action === "italic") togglePressed(action, `is-${action}`);
   else if (action === "font-plus" || action === "font-minus") {

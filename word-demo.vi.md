@@ -52,9 +52,8 @@ Phân công, theo dõi và rà soát thay đổi trước khi ghép nhánh.
 
 ## Kỹ năng & cột mốc
 
-- **Ngôn ngữ:** Java · C
-- **Framework & UI:** Spring Boot · JavaFX
-- **Dữ liệu:** MySQL · MS SQL Server
+- **Ngôn ngữ và nền tảng:** Java · Spring Boot · JavaFX
+- **Dữ liệu:** MySQL
 - **Công cụ:** Git · GitHub · GitLab · Maven
 - **Tiếng Anh:** Đọc hiểu phần lớn tài liệu kỹ thuật
 
@@ -67,11 +66,5 @@ Kỹ thuật phần mềm · Đại học FPT Cần Thơ · GPA 3.28/4 · 2024 �
 ## Liên hệ
 
 Tôi đang tìm cơ hội Java Backend để tiếp tục xây dựng sản phẩm và học hỏi từ một đội ngũ có kinh nghiệm.
-
-**Email:** thucnmce200458@gmail.com
-
-[Gửi email](mailto:thucnmce200458@gmail.com)
-
-[Xem CV (PDF)](assets/cv/CV_Nguyen_Minh_Thuc_VI.pdf)
 
 [GitHub cá nhân](https://github.com/NoNameVI)
