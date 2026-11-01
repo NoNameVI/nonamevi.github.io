@@ -129,16 +129,14 @@ button{cursor:pointer}
 .slide-stage[data-slide="0"] .t-art{left:54%;top:67%;transform:scale(.4) rotate(8deg);opacity:.3;filter:blur(3px) saturate(.55)}
 
 /* A falling T fills the last gap, merges 2 + 2, then clears the row. */
-.t-art{width:340px;height:390px}
-.game-board{background-size:68px 68px}
+.t-art{width:340px;height:340px}
+.game-board{inset:0;width:340px;height:340px;background-size:68px 68px;outline:2px solid #adbdc6}
 .falling-t{left:68px;top:0}
-.target-tile,.merge-ring{left:136px}
+.target-tile,.merge-ring{left:136px;top:272px}
 .board-blocks{position:absolute;inset:0;opacity:0;transition:opacity .45s}
 .slide-stage[data-slide="2"] .board-blocks{opacity:1}
-.base-cell,.background-cell{position:absolute;width:68px;height:68px;display:grid;place-items:center;color:#f7f3eb;font:700 25px Consolas,monospace;background:#16324d;border:3px solid #7898a6;box-shadow:inset 0 0 0 4px #244864,5px 6px 0 rgba(16,22,37,.18)}
-.base-cell{top:266px}.base-cell.b1{left:0}.base-cell.b2{left:68px}.base-cell.b4{left:204px}.base-cell.b5{left:272px}
-.background-cell{opacity:.45;background:#587185;border-color:#a5b6c1;box-shadow:inset 0 0 0 4px #7590a0}.background-cell.bg1{left:0;top:130px}.background-cell.bg2{left:272px;top:62px}.background-cell.bg3{left:204px;top:130px}
-.row-flash{position:absolute;left:0;top:266px;width:340px;height:68px;background:#ffb184;opacity:0;pointer-events:none}
+.base-cell{position:absolute;top:272px;width:68px;height:68px;display:grid;place-items:center;color:#f7f3eb;font:700 25px Consolas,monospace;background:#16324d;border:3px solid #7898a6;box-shadow:inset 0 0 0 4px #244864,5px 6px 0 rgba(16,22,37,.18)}.base-cell.b1{left:0}.base-cell.b2{left:68px}.base-cell.b4{left:204px}.base-cell.b5{left:272px}
+.row-flash{position:absolute;left:0;top:272px;width:340px;height:68px;background:#ffb184;opacity:0;pointer-events:none}
 .merge-result{left:77px;top:345px}
 .clear-result{position:absolute;left:77px;top:367px;color:#d35230;font:700 16px Consolas,monospace;white-space:nowrap;opacity:0}
 .slide-stage[data-slide="2"] .target-tile{opacity:0}
@@ -149,13 +147,27 @@ button{cursor:pointer}
 .t-art.is-dropping .merge-result{animation:merge-label 3.5s ease forwards}
 .t-art.is-dropping .clear-result{animation:clear-label 3.5s ease forwards}
 @keyframes clear-row{0%,72%{opacity:1;transform:scaleY(1);filter:brightness(1)}78%{opacity:1;transform:scaleY(1);filter:brightness(1.9)}91%,100%{opacity:0;transform:scaleY(.08);filter:brightness(2)}}
-@keyframes fall-and-settle{0%,7%{transform:translateY(0)}40%{transform:translateY(198px)}46%{transform:translateY(184px)}52%,89%{transform:translateY(198px)}100%{transform:translateY(266px)}}
+@keyframes fall-and-settle{0%,7%{transform:translateY(0)}40%{transform:translateY(204px)}46%{transform:translateY(190px)}52%,89%{transform:translateY(204px)}100%{transform:translateY(272px)}}
 @keyframes complete-and-clear{0%,46%{opacity:0;transform:scaleY(1);filter:brightness(1)}52%,72%{opacity:1;transform:scaleY(1);filter:brightness(1)}78%{opacity:1;transform:scaleY(1);filter:brightness(1.9)}91%,100%{opacity:0;transform:scaleY(.08);filter:brightness(2)}}
 @keyframes flash-row{0%,70%{opacity:0}76%{opacity:.75}91%,100%{opacity:0}}
 @keyframes merge-label{0%,47%{opacity:0;transform:translateY(7px)}58%,75%{opacity:1;transform:translateY(0)}91%,100%{opacity:0;transform:translateY(-7px)}}
 @keyframes clear-label{0%,74%{opacity:0;transform:translateY(7px)}87%,100%{opacity:1;transform:translateY(0)}}
 
+/* Loose blocks live on the slide, outside the five-by-five game board. */
+.scene-blocks{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;transition:opacity .45s}
+.slide-stage[data-slide="2"] .scene-blocks{opacity:1}
+.scene-block{position:absolute;display:grid;place-items:center;width:var(--size);height:var(--size);background:var(--fill);border:2px solid var(--stroke);color:#fff;font:700 clamp(16px,2vw,25px) Consolas,monospace;box-shadow:5px 7px 0 #22344b25;transform:rotate(var(--angle));animation:block-drift 5s ease-in-out infinite alternate}
+.scene-block.sb1{left:53%;top:19%;--size:54px;--fill:#f06c50;--stroke:#f9a791;--angle:-18deg;animation-delay:-2s}
+.scene-block.sb2{left:94%;top:27%;--size:40px;--fill:#7655ba;--stroke:#ab96d8;--angle:22deg;animation-delay:-4s}
+.scene-block.sb3{left:54%;top:77%;--size:46px;--fill:#2b9e9b;--stroke:#80d4ca;--angle:31deg;animation-delay:-1s}
+.scene-block.sb4{left:77%;top:81%;--size:60px;--fill:#e7a83b;--stroke:#f4ce80;--angle:-14deg;animation-delay:-3s}
+.scene-block.sb5{left:92%;top:68%;--size:32px;--fill:#4b6aeb;--stroke:#9fb0ff;--angle:38deg;animation-delay:-2.5s}
+.scene-block.sb6{left:64%;top:88%;--size:25px;--fill:#dc708a;--stroke:#f4afbc;--angle:-27deg;animation-delay:-.5s}
+@keyframes block-drift{from{transform:translateY(0) rotate(var(--angle))}to{transform:translateY(-8px) rotate(calc(var(--angle) + 4deg))}}
+
 @media(max-width:1120px){.portrait-art{left:65%;top:14%;width:27%;height:68%}.slide-stage[data-slide="0"] .bag-art{left:56%;top:18%;transform:scale(.54) rotate(-9deg)}.slide-stage[data-slide="0"] .t-art{left:55%;top:68%;transform:scale(.34) rotate(8deg)}}
 @media(max-width:760px){.portrait-art{left:65%;top:22%;width:28%;height:60%}.slide-stage[data-slide="0"] .bag-art{left:53%;top:24%;transform:scale(.5) rotate(-9deg)}.slide-stage[data-slide="0"] .t-art{left:53%;top:66%;transform:scale(.29) rotate(8deg)}}
+@media(max-width:760px){.scene-block.sb1{left:49%;top:64%}.scene-block.sb2,.scene-block.sb5{display:none}.scene-block.sb3{left:51%;top:78%}.scene-block.sb4{left:78%;top:80%}.scene-block.sb6{left:90%;top:87%}}
 @media(max-width:540px){.intro-slide h1{font-size:clamp(26px,6vw,34px);line-height:1.06;max-width:100%;overflow-wrap:break-word}.portrait-art{left:48%;top:44%;width:39%;height:37%;box-shadow:7px 7px 0 #f5cbbb,13px 13px 0 #d35230}.slide-stage[data-slide="0"] .bag-art{left:39%;top:48%;transform:scale(.45) rotate(-9deg);opacity:.25}.slide-stage[data-slide="0"] .t-art{left:39%;top:67%;transform:scale(.24) rotate(8deg);opacity:.23}.slide-stage[data-slide="1"] .portrait-art,.slide-stage[data-slide="2"] .portrait-art{left:89%;top:4%;width:9%;height:8%;box-shadow:2px 2px 0 #f5cbbb}.slide-stage[data-slide="3"] .portrait-art,.slide-stage[data-slide="4"] .portrait-art,.slide-stage[data-slide="5"] .portrait-art{width:9%;height:8%}}
-@media(prefers-reduced-motion:reduce){.portrait-art,.board-blocks{transition-duration:.01ms!important}.t-art.is-dropping .base-cell,.t-art.is-dropping .target-tile,.t-art.is-dropping .row-flash,.t-art.is-dropping .clear-result{animation-duration:.01ms!important}}
+@media(max-width:540px){.scene-block.sb1{left:5%;top:50%;--size:38px}.scene-block.sb2{display:none}.scene-block.sb3{left:5%;top:72%;--size:36px}.scene-block.sb4{left:84%;top:65%;--size:40px}.scene-block.sb5{display:block;left:92%;top:81%;--size:25px}.scene-block.sb6{left:65%;top:88%;--size:20px}}
+@media(prefers-reduced-motion:reduce){.portrait-art,.board-blocks{transition-duration:.01ms!important}.scene-block{animation:none!important}.t-art.is-dropping .base-cell,.t-art.is-dropping .target-tile,.t-art.is-dropping .row-flash,.t-art.is-dropping .clear-result{animation-duration:.01ms!important}}
