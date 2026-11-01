@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="clipboard" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M7 5H5v16h14V5h-2"/><path d="M9 3h6l1 4H8z"/></g></symbol>
+  <symbol id="cut" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="5.5" cy="18" r="2.5"/><circle cx="18.5" cy="18" r="2.5"/><path d="M7.5 16.5 18 3M16.5 16.5 6 3M10 11l4 4"/></g></symbol>
+  <symbol id="copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="8" y="7" width="12" height="14"/><path d="M16 7V3H4v14h4"/></g></symbol>
+  <symbol id="brush" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 14 8-9 3 3-9 8zM7 16c-3 0-4 2-4 5 2-1 5 0 6-3z"/></g></symbol>
+  <symbol id="bullets" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="4" cy="6" r="1.2"/><circle cx="4" cy="12" r="1.2"/><circle cx="4" cy="18" r="1.2"/></g><g stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13"/></g></symbol>
+  <symbol id="numbers" viewBox="0 0 24 24"><g fill="currentColor" font-family="Arial" font-size="6"><text x="1" y="8">1</text><text x="1" y="14">2</text><text x="1" y="20">3</text></g><g stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13"/></g></symbol>
+  <symbol id="indent" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 5h11M10 9h11M10 15h11M10 19h11M3 12h8m-3-3 3 3-3 3"/></g></symbol>
+  <symbol id="align-left" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 5h18M3 10h12M3 15h18M3 20h12"/></g></symbol>
+  <symbol id="align-center" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 5h18M6 10h12M3 15h18M6 20h12"/></g></symbol>
+  <symbol id="align-right" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 5h18M9 10h12M3 15h18M9 20h12"/></g></symbol>
+  <symbol id="justify" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 5h18M3 10h18M3 15h18M3 20h18"/></g></symbol>
+  <symbol id="spacing" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v18M4 6l3-3 3 3M4 18l3 3 3-3M13 6h8M13 12h8M13 18h8"/></g></symbol>
+  <symbol id="borders" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M12 3v18M3 12h18"/></g></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 6 6"/></g></symbol>
+  <symbol id="replace" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h14l-3-3M20 16H6l3 3"/><path d="M4 8V5M20 16v3"/></g></symbol>
+  <symbol id="pointer" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M5 2v19l5-5 4 6 3-2-4-6 7-1z"/></symbol>
+  <symbol id="mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8"/></g></symbol>
+  <symbol id="pen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="m3 21 5-1 12-12-4-4L4 16zM14 6l4 4M3 21h18"/></g></symbol>
+  <symbol id="tiles" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></g></symbol>
+</svg>
