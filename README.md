@@ -20,7 +20,7 @@ In **Settings → Pages**, select **Deploy from a branch**, `main`, and `/ (root
 - `word-demo.html`: separate Word-inspired preview; it reads `word-demo.vi.md` or `word-demo.en.md` as its content source.
 - `assets/word-demo.css` and `assets/word-demo.js`: document layout, Markdown rendering, and demo toolbar interactions.
 
-The `.md` files contain the document text. GitHub's Markdown viewer does not run the Word-style toolbar; visitors open `word-demo.html` for that interface. The preview is read-only, while a few display controls work in the browser.
+The `.md` files contain the document text. GitHub's Markdown viewer does not run the Word-style toolbar; visitors open `word-demo.html` for that interface. The preview is read-only, while a few display controls work in the browser. After editing either Markdown file or `assets/word-icons.svg`, run `node scripts/build-word-demo-bundle.mjs`. The generated bundle lets `word-demo.html` display its content and icons when opened directly with `file://`; the hosted page reads the `.md` files normally.
 
 No build step is required. Bootstrap 5.3 is loaded from a CDN; the custom stylesheet also supplies the core layout. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
 

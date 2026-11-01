@@ -1,3 +1,10 @@
+if (window.wordDemoAssets?.icons) {
+  const spriteDocument = new DOMParser().parseFromString(window.wordDemoAssets.icons, "image/svg+xml");
+  const sprite = document.importNode(spriteDocument.documentElement, true);
+  sprite.classList.add("word-icon-sprite");
+  document.body.prepend(sprite);
+}
+
 const app = document.getElementById("word-app");
 const pagesHost = document.getElementById("pages");
 const scroller = document.getElementById("document-scroll");
@@ -83,11 +90,17 @@ async function setLanguage(next) {
   if (language === "en") url.searchParams.set("lang", "en");
   else url.searchParams.delete("lang");
   history.replaceState(null, "", url);
-  try {
-    const response = await fetch(file);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    renderPages(await response.text());
-  } catch (_) {
+  let markdown;
+  if (location.protocol !== "file:") {
+    try {
+      const response = await fetch(file);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      markdown = await response.text();
+    } catch (_) {}
+  }
+  markdown ||= window.wordDemoAssets?.markdown?.[language];
+  if (markdown) renderPages(markdown);
+  else {
     pagesHost.innerHTML = `<div class="loading">${ui[language].loadFailed}</div>`;
   }
   try { localStorage.setItem("portfolio-language", language); } catch (_) {}
