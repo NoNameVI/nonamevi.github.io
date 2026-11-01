@@ -2,9 +2,6 @@
 
 <p align="right"><a href="https://nonamevi.github.io/">▶ Trình chiếu portfolio</a> &nbsp;·&nbsp; <a href="https://nonamevi.github.io/word-demo.html">▣ Bản Word tương tác</a> &nbsp;·&nbsp; <a href="#english-version">EN</a></p>
 
-| **Tệp** | **Trang đầu** | Chèn | Thiết kế | Bố trí | Tham chiếu | Xem lại | Xem |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 📋 Dán · ✂ Cắt · ▣ Sao chép | **B** · *I* · <u>U</u> · A▾ | ≡ · ☷ · ↔ | **Thường** · **Tiêu đề** | 🔍 Tìm · ▤ Chọn | A4 · 2 trang | VI / [EN](#english-version) | [↗ Portfolio](https://nonamevi.github.io/) |
 
 > **Chế độ xem tài liệu** · Nội dung portfolio nằm ngay trong `README.md`. Thanh công cụ bên trên mô phỏng giao diện Word trong giới hạn hiển thị của GitHub Markdown.
 
