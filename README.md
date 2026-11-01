@@ -1,6 +1,6 @@
 # Nguyễn Minh Thức — Portfolio
 
-Bilingual (Vietnamese / English) Java Backend portfolio, built as a static site for GitHub Pages.
+Bilingual (Vietnamese / English) Java Backend portfolio, built as a static slide presentation for GitHub Pages.
 
 ## Local preview
 
@@ -12,12 +12,12 @@ In **Settings → Pages**, select **Deploy from a branch**, `main`, and `/ (root
 
 ## Maintain
 
-- `index.html`: default Vietnamese content and layout.
-- `assets/site.css`: responsive design.
-- `assets/site.js`: English translations and interactions.
+- `index.html`: PowerPoint-inspired presentation shell and six content slides.
+- `assets/presentation.css`: light UI, responsive layout, and Morph-like transitions.
+- `assets/presentation.js`: slide navigation, VI/EN translations, clipboard actions, and slide-show mode.
 - `assets/images/`: portrait and project artwork.
 - `assets/cv/`: downloadable one-page CVs.
 
-No build step is required. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
+No build step is required. Bootstrap 5.3 is loaded from a CDN; the custom stylesheet also supplies the core layout. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
 
-Portrait supplied by Nguyễn Minh Thức. AURA image and Tetris banner are project assets; the AURA image illustrates the project and is not a live screenshot.
+The AURA shopping bag/shoe and numbered T block are symbolic CSS illustrations, not project screenshots. The original project artwork and portrait remain in `assets/images/` for reference and social previews.
