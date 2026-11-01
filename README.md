@@ -17,6 +17,8 @@ In **Settings → Pages**, select **Deploy from a branch**, `main`, and `/ (root
 - `assets/presentation.js`: slide navigation, VI/EN translations, clipboard actions, and slide-show mode.
 - `assets/images/`: portrait and project artwork.
 - `assets/cv/`: downloadable one-page CVs.
+- `word-demo.html`: separate Word-inspired preview; it reads `word-demo.vi.md` or `word-demo.en.md` as its content source.
+- `assets/word-demo.css` and `assets/word-demo.js`: document layout, Markdown rendering, and demo toolbar interactions.
 
 No build step is required. Bootstrap 5.3 is loaded from a CDN; the custom stylesheet also supplies the core layout. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
 

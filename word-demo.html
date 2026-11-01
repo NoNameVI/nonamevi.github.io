@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#185abd">
+  <meta name="description" content="Bản demo portfolio Markdown trong giao diện lấy cảm hứng từ Microsoft Word.">
+  <title>Nguyễn Minh Thức — Word portfolio demo</title>
+  <link rel="stylesheet" href="assets/word-demo.css">
+  <script src="assets/word-demo.js" defer></script>
+</head>
+<body>
+  <div class="word-app" id="word-app">
+    <header class="title-bar">
+      <span class="word-mark" aria-label="Word">W</span>
+      <span class="document-name" id="document-name">Portfolio_NguyenMinhThuc.vi.md</span>
+      <span class="saved-state"><span class="cloud-icon" aria-hidden="true">☁</span> <span data-ui="saved">Bản xem trước · Nội dung từ Markdown</span></span>
+      <a class="back-link" href="index.html" data-ui="back">← Portfolio</a>
+      <button type="button" class="title-action" data-action="copy" data-ui="share">Chia sẻ ↗</button>
+    </header>
+
+    <nav class="tab-bar" aria-label="Word ribbon tabs" role="tablist">
+      <button type="button" role="tab" aria-selected="false" data-tab="file" data-ui="file">Tệp</button>
+      <button type="button" role="tab" aria-selected="true" data-tab="home" data-ui="home">Trang đầu</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="insert" data-ui="insert">Chèn</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="layout" data-ui="layout">Bố trí</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="view" data-ui="view">Xem</button>
+      <span class="tab-spacer"></span>
+      <span class="demo-badge" data-ui="demo">BẢN DEMO</span>
+    </nav>
+
+    <div class="ribbon" id="ribbon">
+      <div class="ribbon-panel" data-panel="file" hidden>
+        <div class="tool-group"><a class="large-tool" id="download-md" href="word-demo.vi.md" download><span class="tool-icon">↓</span><span data-ui="download">Tải file .md</span></a><button type="button" class="large-tool" data-action="print"><span class="tool-icon">▤</span><span data-ui="print">In tài liệu</span></button><small data-ui="fileGroup">Tệp</small></div>
+        <p class="ribbon-hint" data-ui="fileHint">Nội dung được đọc trực tiếp từ file Markdown. Đây là bản xem trước, không phải trình soạn thảo.</p>
+      </div>
+      <div class="ribbon-panel is-visible" data-panel="home">
+        <div class="tool-group"><button type="button" class="large-tool" data-action="copy"><span class="tool-icon">▣</span><span data-ui="copy">Sao chép liên kết</span></button><small data-ui="clipboard">Bảng nhớ tạm</small></div>
+        <div class="tool-group font-group"><div class="font-controls"><label class="sr-only" for="font-family" data-ui="font">Phông chữ</label><select id="font-family"><option value="aptos">Aptos</option><option value="georgia">Georgia</option></select><label class="sr-only" for="font-size" data-ui="fontSize">Cỡ chữ</label><select id="font-size"><option value="14">14</option><option value="15" selected>15</option><option value="16">16</option><option value="18">18</option></select></div><div class="format-controls"><button type="button" data-action="bold" aria-pressed="false" title="Bold"><b>B</b></button><button type="button" data-action="italic" aria-pressed="false" title="Italic"><i>I</i></button><button type="button" data-action="font-minus" aria-label="Decrease font size">A−</button><button type="button" data-action="font-plus" aria-label="Increase font size">A+</button><span class="text-color" aria-hidden="true">A</span></div><small data-ui="font">Phông chữ</small></div>
+        <div class="tool-group paragraph-group"><div class="paragraph-controls"><button type="button" data-action="align-left" aria-pressed="true" aria-label="Align left">☷</button><button type="button" data-action="align-center" aria-pressed="false" aria-label="Align center">≡</button><button type="button" data-action="align-right" aria-pressed="false" aria-label="Align right">≣</button><button type="button" data-action="line-space" aria-label="Line spacing">↕</button></div><div class="paragraph-icons" aria-hidden="true">• ─── &nbsp; 1. ─── &nbsp; ↤ ↦</div><small data-ui="paragraph">Đoạn văn</small></div>
+        <div class="tool-group style-group"><span class="style-card"><strong>Aa</strong><small data-ui="normal">Thường</small></span><span class="style-card heading-style"><strong>Aa</strong><small data-ui="heading">Tiêu đề 1</small></span><small data-ui="styles">Kiểu</small></div>
+      </div>
+      <div class="ribbon-panel" data-panel="insert" hidden>
+        <div class="tool-group"><button type="button" class="large-tool" data-action="jump" data-page="1"><span class="tool-icon">▧</span><span data-ui="profile">Hồ sơ</span></button><button type="button" class="large-tool" data-action="jump" data-page="2"><span class="tool-icon">▤</span><span data-ui="skills">Kỹ năng</span></button><small data-ui="navigate">Điều hướng</small></div>
+        <p class="ribbon-hint" data-ui="insertHint">Chọn một mục để chuyển đến trang chứa nội dung tương ứng.</p>
+      </div>
+      <div class="ribbon-panel" data-panel="layout" hidden>
+        <div class="tool-group"><span class="large-tool non-action"><span class="tool-icon">▯</span><span data-ui="a4">Khổ A4</span></span><span class="large-tool non-action"><span class="tool-icon">⇔</span><span data-ui="margins">Lề rộng</span></span><small data-ui="pageSetup">Thiết lập trang</small></div>
+        <p class="ribbon-hint" data-ui="layoutHint">Hai trang giấy A4 với lề và khoảng cách chữ theo phong cách tài liệu Word.</p>
+      </div>
+      <div class="ribbon-panel" data-panel="view" hidden>
+        <div class="tool-group"><button type="button" class="large-tool" data-action="read-mode" aria-pressed="false"><span class="tool-icon">▣</span><span data-ui="readMode">Chế độ đọc</span></button><button type="button" class="large-tool" data-action="print"><span class="tool-icon">▤</span><span data-ui="print">In tài liệu</span></button><small data-ui="viewGroup">Chế độ xem</small></div>
+        <div class="tool-group"><button type="button" class="large-tool" data-action="zoom-reset"><span class="tool-icon">⌕</span><span data-ui="zoom100">100%</span></button><small data-ui="zoom">Thu phóng</small></div>
+      </div>
+    </div>
+
+    <div class="workspace">
+      <aside class="page-pane" aria-label="Document pages">
+        <div class="pane-title" data-ui="pages">TRANG</div>
+        <button type="button" class="page-thumbnail is-active" data-action="jump" data-page="1"><span class="page-number">1</span><span class="mini-page"><b>NGUYỄN<br>MINH THỨC</b><i></i><em>PORTFOLIO</em></span><span data-ui="overview">Tổng quan</span></button>
+        <button type="button" class="page-thumbnail" data-action="jump" data-page="2"><span class="page-number">2</span><span class="mini-page"><b>01 → 02 → 03</b><i></i><em>SKILLS · CONTACT</em></span><span data-ui="experience">Kỹ năng & liên hệ</span></button>
+        <p class="source-note"><span data-ui="source">Nguồn nội dung</span><br><code id="source-filename">word-demo.vi.md</code></p>
+      </aside>
+      <main class="document-scroll" id="document-scroll">
+        <div class="ruler" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span></div>
+        <div class="pages" id="pages" aria-live="polite"><div class="loading" data-ui="loading">Đang mở tài liệu Markdown…</div></div>
+      </main>
+    </div>
+
+    <footer class="status-bar"><span id="page-status">Trang 1 / 2</span><span id="word-count">0 từ</span><span class="status-spacer"></span><button type="button" class="view-button" data-action="read-mode" aria-label="Toggle reading mode">▣</button><span aria-hidden="true">▤</span><label class="sr-only" for="zoom-range" data-ui="zoom">Thu phóng</label><span aria-hidden="true">−</span><input id="zoom-range" type="range" min="80" max="120" step="10" value="100"><span aria-hidden="true">+</span><button type="button" class="zoom-value" data-action="zoom-reset" id="zoom-value">100%</button><button type="button" class="language-button" id="language-button" aria-label="Switch language"><span class="lang-vi active">VI</span> / <span class="lang-en">EN</span></button></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+</body>
+</html>
