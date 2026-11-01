@@ -10,7 +10,7 @@ const translations = {
   vi: {
     skip: "Chuyển đến nội dung", searchLabel: "Tìm slide", searchPlaceholder: "Tìm slide",
     copyAria: "Sao chép liên kết phù hợp với slide", cutAria: "Cắt: sao chép liên kết phù hợp với slide",
-    previous: "Trước", next: "Tiếp", show: "Trình chiếu", replay: "Phát lại", exitShow: "Thoát trình chiếu ×",
+    previous: "Trước", next: "Tiếp", show: "Trình chiếu", replay: "Phát lại", exitShow: "Thoát trình chiếu ×", wordView: "Mở Word ↗",
     thumbIntro: "Giới thiệu", thumbMethod: "Cách tôi làm việc", thumbSkills: "Kỹ năng & cột mốc", thumbContact: "Liên hệ", thumbContactPreview: "KẾT NỐI.", shapes: "Hình", arrange: "Sắp xếp",
     introKicker: "01 / GIỚI THIỆU", introLine1: "TÔI XÂY", introLine2: "PHẦN LÕI", introLine3: "CHO SẢN PHẨM CÓ THỂ DÙNG.",
     introDescription: "Từ yêu cầu đến luồng chức năng rõ ràng, rồi đưa sản phẩm tới trạng thái sử dụng được.", portraitAlt: "Chân dung Nguyễn Minh Thức", rowCleared: "HÀNG ĐÃ XÓA",
@@ -41,7 +41,7 @@ const translations = {
   en: {
     skip: "Skip to content", searchLabel: "Search slides", searchPlaceholder: "Search slides",
     copyAria: "Copy the link for the current slide", cutAria: "Cut: copy the link for the current slide",
-    previous: "Previous", next: "Next", show: "Slide Show", replay: "Replay", exitShow: "Exit slide show ×",
+    previous: "Previous", next: "Next", show: "Slide Show", replay: "Replay", exitShow: "Exit slide show ×", wordView: "Word view ↗",
     thumbIntro: "Introduction", thumbMethod: "How I work", thumbSkills: "Skills & milestones", thumbContact: "Contact", thumbContactPreview: "LET'S TALK.", shapes: "Shapes", arrange: "Arrange",
     introKicker: "01 / INTRODUCTION", introLine1: "I BUILD", introLine2: "THE CORE", introLine3: "FOR SOFTWARE PEOPLE CAN USE.",
     introDescription: "I turn requirements into clear flows and help bring software to a usable state.", portraitAlt: "Portrait of Nguyen Minh Thuc", rowCleared: "ROW CLEARED",

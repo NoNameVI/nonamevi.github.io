@@ -16,6 +16,7 @@ button{cursor:pointer}
 .slide-search{margin-left:auto;margin-right:auto;border:1px solid #bfc0c3;border-radius:4px;background:#fff;color:#777;display:flex;align-items:center;gap:6px;width:min(24%,270px);height:26px;padding:0 8px;flex:none}
 .slide-search input{border:0;outline:0;background:transparent;width:100%;min-width:0;font-size:11px;color:#252525}
 .profile-avatar{border-radius:50%;background:#4b56a6;color:#fff;width:23px;height:23px;display:grid;place-items:center;font-size:10px;flex:none}
+.word-version-link{flex:none;white-space:nowrap;text-decoration:none;color:#b73f20;background:#fffaf7;border:1px solid #d35230;border-radius:3px;box-shadow:2px 2px 0 #e9ae99;padding:5px 8px;font-size:10px;font-weight:700}.word-version-link:hover,.word-version-link:focus-visible{background:#d35230;color:#fff}
 .window-glyphs{white-space:nowrap;letter-spacing:3px;font-size:15px;color:#474747}
 .menu-bar{height:36px;min-height:36px;display:flex;align-items:center;gap:20px;padding:0 13px;background:#f8f8f9;border-bottom:1px solid #dedee0;white-space:nowrap;overflow-x:auto;scrollbar-width:none;font-size:11px}
 .menu-bar span{height:100%;display:flex;align-items:center}.menu-bar .menu-active{border-bottom:2px solid #d35230;font-weight:700}

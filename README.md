@@ -1,6 +1,6 @@
 # Nguyễn Minh Thức — Portfolio
 
-Bilingual (Vietnamese / English) Java Backend portfolio, built as a static slide presentation for GitHub Pages.
+Bilingual (Vietnamese / English) Java Backend portfolio. The main page presents Markdown content in a Word-inspired reading interface; the earlier PowerPoint presentation remains available at `/slides.html`.
 
 ## Local preview
 
@@ -12,16 +12,18 @@ In **Settings → Pages**, select **Deploy from a branch**, `main`, and `/ (root
 
 ## Maintain
 
-- `index.html`: PowerPoint-inspired presentation shell and six content slides.
-- `assets/presentation.css`: light UI, responsive layout, and Morph-like transitions.
-- `assets/presentation.js`: slide navigation, VI/EN translations, clipboard actions, and slide-show mode.
+- `index.html`: Word-inspired main portfolio, including page navigation and reading controls.
+- `portfolio.vi.md` and `portfolio.en.md`: the portfolio text for each language.
+- `assets/word-demo.css` and `assets/word-demo.js`: document layout, Markdown rendering, VI/EN switching, and toolbar interactions.
+- `assets/word-icons.svg`: source for the Word-inspired vector icons.
+- `slides.html`: earlier PowerPoint-inspired presentation with six slides.
+- `assets/presentation.css` and `assets/presentation.js`: slide layout, navigation, and Morph-like transitions.
 - `assets/images/`: portrait and project artwork.
 - `assets/cv/`: downloadable one-page CVs.
-- `word-demo.html`: separate Word-inspired preview; it reads `word-demo.vi.md` or `word-demo.en.md` as its content source.
-- `assets/word-demo.css` and `assets/word-demo.js`: document layout, Markdown rendering, and demo toolbar interactions.
+- `word-demo.html`: redirects older demo links to the main portfolio.
 
-The `.md` files contain the document text. GitHub's Markdown viewer does not run the Word-style toolbar; visitors open `word-demo.html` for that interface. The preview is read-only, while a few display controls work in the browser. After editing either Markdown file or `assets/word-icons.svg`, run `node scripts/build-word-demo-bundle.mjs`. The generated bundle lets `word-demo.html` display its content and icons when opened directly with `file://`; the hosted page reads the `.md` files normally.
+GitHub's Markdown viewer shows the raw document without the Word-style toolbar. Visitors open `index.html` for that interface. After editing either Markdown file or `assets/word-icons.svg`, run `node scripts/build-word-demo-bundle.mjs`. The generated bundle lets `index.html` display its content and icons when opened directly with `file://`; the hosted page reads the `.md` files normally.
 
-No build step is required. Bootstrap 5.3 is loaded from a CDN; the custom stylesheet also supplies the core layout. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
+No build step is required beyond regenerating the offline content bundle after source edits. The slide presentation loads Bootstrap 5.3 from a CDN. Keep descriptions aligned with the linked project repositories and avoid publishing secrets or unverifiable metrics.
 
 The AURA shopping bag/shoe and numbered T block are symbolic CSS illustrations, not project screenshots. The original project artwork and portrait remain in `assets/images/` for reference and social previews.
